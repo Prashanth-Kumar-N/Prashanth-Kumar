@@ -7,7 +7,7 @@ export default function Hero() {
     return () => clearTimeout(t);
   }, []);
 
-  const handleScroll = (href) => {
+  const handleScroll = (href: string) => {
     document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -76,7 +76,8 @@ export default function Hero() {
         </div>
 
         <p className="mt-6 text-slate-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-          Senior Full Stack Developer building scalable, user-centric web applications for global leaders like{" "}
+          Senior Full Stack Developer building scalable, user-centric web
+          applications for global leaders like{" "}
           <span className="text-cyan-400">Cognizant</span>,{" "}
           <span className="text-cyan-400">ADP</span>, and{" "}
           <span className="text-cyan-400">TCS</span>.
@@ -112,7 +113,9 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
-        <span className="font-mono text-xs text-slate-500 tracking-widest">SCROLL</span>
+        <span className="font-mono text-xs text-slate-500 tracking-widest">
+          SCROLL
+        </span>
         <div className="w-px h-8 bg-gradient-to-b from-cyan-400/50 to-transparent" />
       </div>
     </section>
